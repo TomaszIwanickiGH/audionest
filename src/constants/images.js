@@ -9,7 +9,9 @@ import shoppingCart from '../assets/shopping-cart.png'
 import iconFacebook from '../assets/icon-facebook.svg'
 import iconHamburger from '../assets/icon-hamburger.svg'
 import iconInstagram from '../assets/icon-instagram.svg'
-import iconTwitter from '../assets/icon-twiiter.svg'
+import iconTwitter from '../assets/icon-twitter.svg'
+import iconArrow from '../assets/icon-arrow.svg'
+import iconClose from '../assets/icon-close.svg'
 
 export default {
   earphonesLogo,
@@ -24,4 +26,6 @@ export default {
   iconHamburger,
   iconInstagram,
   iconTwitter,
+  iconArrow,
+  iconClose,
 }
