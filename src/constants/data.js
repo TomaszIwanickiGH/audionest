@@ -1,3 +1,5 @@
+import images from './images'
+
 const navLinks = [
   {
     id: '#home',
@@ -17,4 +19,25 @@ const navLinks = [
   },
 ]
 
-export default navLinks
+const devices = [
+  {
+    image: images.headphonesLogo,
+    title: 'Headphones',
+    text: 'Shop',
+    arrow: images.iconArrow,
+  },
+  {
+    image: images.speakersLogo,
+    title: 'Speakers',
+    text: 'Shop',
+    arrow: images.iconArrow,
+  },
+  {
+    image: images.earphonesLogo,
+    title: 'Earphones',
+    text: 'Shop',
+    arrow: images.iconArrow,
+  },
+]
+
+export default { navLinks, devices }
