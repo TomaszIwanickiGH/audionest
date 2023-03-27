@@ -1,6 +1,6 @@
 import earphonesLogo from '../assets/earphones-logo.png'
 import headphonesLogo from '../assets/headphones-logo.png'
-import speakersLogo from '../assets/speakers-logo.jpg'
+import speakersLogo from '../assets/speakers-logo.png'
 import headphonesImage from '../assets/headphones-image.jpg'
 import manPhoto from '../assets/man-photo.jpg'
 import yx1Earphones from '../assets/yx1-earphones.jpg'
