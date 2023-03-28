@@ -1,25 +1,36 @@
 import React from 'react'
 import { data, styles } from '../constants'
 
-const Device = ({ title, text, arrow }) => (
-  <div className="bg-veryVeryLightGray w-[300px] h-[200px] relative flex flex-col items-center z-[-5]">
-    <h3 className="mt-28 font-[600] tracking-[.06rem]">{title}</h3>
-    <div className="mt-3 flex items-center justify-center gap-2">
-      <p className="text-[13px] font-[700] hover:text-veryLightGray hover:cursor-pointer text-secondary">{text}</p>
-      <img src={arrow} alt="arrow" className="w-[11px] h-[11px]" />
-    </div>
-  </div>
-)
-
 const Devices = () => {
+  const { devices } = data
   return (
-    <div className={`${styles.padding} mx-auto flex flex-wrap justify-around mt-12`}>
-      {data.devices.map((device, index) => (
-        <div key={index} className="relative z-10">
-          <img src={device.image} alt="title" className={`${device.className} absolute top-[-60px]`} />
-          <Device {...device} />
+    <div className={`${styles.padding} mx-auto flex xl:flex-row flex-col xl:justify-around items-center xl:gap-16 gap-20 mt-12`}>
+      <div className="bg-veryVeryLightGray xl:w-[400px] w-full h-[200px] relative flex flex-col items-center rounded-md">
+        <img src={devices[0].image} alt="title" className={`${devices[0].className} absolute top-[-60px]`} />
+        <h3 className="mt-28 font-[600] tracking-[.06rem]">{devices[0].title}</h3>
+        <div className="mt-3 flex items-center justify-center gap-2">
+          <p className="text-[13px] font-[700] hover:text-veryLightGray hover:cursor-pointer text-secondary">{devices[0].text}</p>
+          <img src={devices[0].arrow} alt="arrow" className="w-[11px] h-[11px]" />
         </div>
-      ))}
+      </div>
+
+      <div className="bg-veryVeryLightGray xl:w-[400px] w-full h-[200px] relative flex flex-col items-center rounded-md">
+        <img src={devices[1].image} alt="title" className={`${devices[1].className} absolute top-[-60px]`} />
+        <h3 className="mt-28 font-[600] tracking-[.06rem]">{devices[1].title}</h3>
+        <div className="mt-3 flex items-center justify-center gap-2">
+          <p className="text-[13px] font-[700] hover:text-veryLightGray hover:cursor-pointer text-secondary">{devices[1].text}</p>
+          <img src={devices[1].arrow} alt="arrow" className="w-[11px] h-[11px]" />
+        </div>
+      </div>
+
+      <div className="bg-veryVeryLightGray xl:w-[400px] w-full h-[200px] relative flex flex-col items-center rounded-md">
+        <img src={devices[2].image} alt="title" className={`${devices[2].className} absolute top-[-60px]`} />
+        <h3 className="mt-28 font-[600] tracking-[.06rem]">{devices[2].title}</h3>
+        <div className="mt-3 flex items-center justify-center gap-2">
+          <p className="text-[13px] font-[700] hover:text-veryLightGray hover:cursor-pointer text-secondary">{devices[2].text}</p>
+          <img src={devices[2].arrow} alt="arrow" className="w-[11px] h-[11px]" />
+        </div>
+      </div>
     </div>
   )
 }
