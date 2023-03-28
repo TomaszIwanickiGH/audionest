@@ -4,7 +4,7 @@ import { data, styles } from '../constants'
 const Devices = () => {
   const { devices } = data
   return (
-    <div className={`${styles.padding} mx-auto flex xl:flex-row flex-col xl:justify-around items-center xl:gap-16 gap-20 mt-12`}>
+    <section className={`${styles.padding} mx-auto flex xl:flex-row flex-col xl:justify-around items-center xl:gap-16 gap-20 mt-20`}>
       <div className="bg-veryVeryLightGray xl:w-[400px] w-full h-[200px] relative flex flex-col items-center rounded-md">
         <img src={devices[0].image} alt="title" className={`${devices[0].className} absolute top-[-60px]`} />
         <h3 className="mt-28 font-[600] tracking-[.06rem]">{devices[0].title}</h3>
@@ -31,7 +31,7 @@ const Devices = () => {
           <img src={devices[2].arrow} alt="arrow" className="w-[11px] h-[11px]" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
