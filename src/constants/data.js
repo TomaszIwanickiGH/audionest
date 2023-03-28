@@ -22,21 +22,24 @@ const navLinks = [
 const devices = [
   {
     image: images.headphonesLogo,
-    title: 'Headphones',
-    text: 'Shop',
+    title: 'HEADPHONES',
+    text: 'SHOP',
     arrow: images.iconArrow,
+    className: 'w-[120px] h-[150px]',
   },
   {
     image: images.speakersLogo,
-    title: 'Speakers',
-    text: 'Shop',
+    title: 'SPEAKERS',
+    text: 'SHOP',
     arrow: images.iconArrow,
+    className: 'w-[200px] h-[150px]',
   },
   {
     image: images.earphonesLogo,
-    title: 'Earphones',
-    text: 'Shop',
+    title: 'EARPHONES',
+    text: 'SHOP',
     arrow: images.iconArrow,
+    className: 'w-[150px] h-[170px]',
   },
 ]
 
