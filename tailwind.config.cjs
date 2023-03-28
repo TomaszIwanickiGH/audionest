@@ -8,6 +8,10 @@ module.exports = {
         primary: '#0B0B0B',
         lightGray: '#4E4E4E',
         veryLightGray: '#828282',
+        veryVeryLightGray: '#F1F1F1',
+      },
+      screens: {
+        xl: '1450px',
       },
     },
   },
