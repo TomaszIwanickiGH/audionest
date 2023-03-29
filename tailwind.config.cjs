@@ -11,6 +11,7 @@ module.exports = {
         veryVeryLightGray: '#F1F1F1',
       },
       screens: {
+        xs: '550px',
         xl: '1450px',
       },
     },
