@@ -8,5 +8,6 @@ import HeroWrapper from './HeroWrapper'
 import HeadphonesWrapper from './HeadphonesWrapper'
 import SpeakersWrapper from './SpeakersWrapper'
 import EarphonesWrapper from './EarphonesWrapper'
+import MainProduct from './MainProduct'
 
-export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper }
+export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, MainProduct }
