@@ -2,19 +2,19 @@ import images from './images'
 
 const navLinks = [
   {
-    id: '#home',
+    id: '/',
     text: 'Home',
   },
   {
-    id: '#headphones',
+    id: '/headphones',
     text: 'Headphones',
   },
   {
-    id: '#speakers',
+    id: '/speakers',
     text: 'Speakers',
   },
   {
-    id: '#earphones',
+    id: '/earphones',
     text: 'Earphones',
   },
 ]
