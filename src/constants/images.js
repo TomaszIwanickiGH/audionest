@@ -14,6 +14,13 @@ import iconArrow from '../assets/icon-arrow.svg'
 import iconClose from '../assets/icon-close.svg'
 import speakersImage from '../assets/speakers-image.png'
 
+import HEX1 from '../assets/headphones/H-ex1.png'
+import HEX2 from '../assets/headphones/H-ex2.png'
+import HEX3 from '../assets/headphones/H-ex3.png'
+import Hlaptop from '../assets/headphones/H-laptop.jpg'
+import Hmain from '../assets/headphones/H-main.jpg'
+import Hman from '../assets/headphones/H-man.jpg'
+
 export default {
   earphonesLogo,
   headphonesLogo,
@@ -30,4 +37,10 @@ export default {
   iconArrow,
   iconClose,
   speakersImage,
+  HEX1,
+  HEX2,
+  HEX3,
+  Hlaptop,
+  Hmain,
+  Hman,
 }
