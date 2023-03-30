@@ -1,14 +1,16 @@
-import { Navbar, Hero, Devices, Products, About, Footer } from './components'
+import { Navbar, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, About, Footer } from './components'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <div className="w-full bg-primary">
-        <Navbar />
-        <Hero />
-      </div>
-      <Devices />
-      <Products />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HeroWrapper />} />
+        <Route path="/headphones" element={<HeadphonesWrapper />} />
+        <Route path="/speakers" element={<SpeakersWrapper />} />
+        <Route path="/earphones" element={<EarphonesWrapper />} />
+      </Routes>
       <About />
       <Footer />
     </div>
