@@ -1,18 +1,21 @@
 import React from 'react'
 import { images, styles, data } from '../constants'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className={`${styles.padding} bg-primary mx-auto sm:pb-10 pb-6`}>
       <div className="flex justify-between lg:flex-row flex-col md:items-start items-center">
-        <a href="/" className="font-[800] lg:text-[28px] text-[30px] text-white">
-          audiophile
-        </a>
+        <Link to="/" className="font-[800] lg:text-[28px] text-[30px] text-white">
+          <p onClick={() => window.scrollTo(0, 0)}>audiophile</p>
+        </Link>
         <ul className="flex xs:flex-row flex-col md:gap-12 gap-6 md:mt-4 mt-6">
           {data.navLinks.map((link) => (
-            <a key={link.id} href={link.id}>
-              <li className="text-white hover:cursor-pointer hover:text-secondary md:text-start text-center">{link.text}</li>
-            </a>
+            <Link key={link.id} to={link.id}>
+              <li className="text-white hover:cursor-pointer hover:text-secondary md:text-start text-center" onClick={() => window.scrollTo(0, 0)}>
+                {link.text}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
