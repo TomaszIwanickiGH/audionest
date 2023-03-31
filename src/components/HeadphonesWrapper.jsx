@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { MainProduct, Devices } from '../components'
+import { MainProduct, Devices, MainDescription } from '../components'
 import { images } from '../constants'
 
 const HeadphonesWrapper = () => {
@@ -7,6 +7,7 @@ const HeadphonesWrapper = () => {
   return (
     <section>
       <MainProduct image={currentProduct.image} price={currentProduct.price} />
+      <MainDescription />
       <Devices />
     </section>
   )

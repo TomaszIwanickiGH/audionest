@@ -9,5 +9,7 @@ import HeadphonesWrapper from './HeadphonesWrapper'
 import SpeakersWrapper from './SpeakersWrapper'
 import EarphonesWrapper from './EarphonesWrapper'
 import MainProduct from './MainProduct'
+import MainDescription from './MainDescription'
+import SectionImages from './SectionImages'
 
-export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, MainProduct }
+export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, MainProduct, MainDescription, SectionImages }
