@@ -12,7 +12,7 @@ const MainProduct = ({ image, price }) => {
 
       <div id="home" className={`flex lg:flex-row flex-col items-center justify-between relative z-0 lg:mt-10 mt-5`}>
         <div className="lg:w-[50%] w-full bg-veryVeryLightGray">
-          <img src={image} alt="hero" className="w-full" />
+          <img src={image} alt="hero" className="w-full rounded-md" />
         </div>
         <div className="flex flex-col lg:items-start items-center lg:mt-0 mt-8">
           <h4 className="text-secondary tracking-[.2rem] mb-2 text-[14px]">NEW PRODUCT</h4>
