@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { styles, images } from '../constants'
 import { Link } from 'react-router-dom'
 
-const MainProduct = ({ image, price }) => {
+const MainProduct = ({ image, price, title }) => {
   const [count, setCount] = useState(1)
   return (
     <section className={`${styles.padding} mx-auto flex flex-col`}>
@@ -16,10 +16,7 @@ const MainProduct = ({ image, price }) => {
         </div>
         <div className="flex flex-col lg:items-start items-center lg:mt-0 mt-8">
           <h4 className="text-secondary tracking-[.2rem] mb-2 text-[14px]">NEW PRODUCT</h4>
-          <h2 className="text-primary lg:text-[30px] md:text-[20px] text-[20px] font-[500]">
-            XX99 MARK II <br className="lg:block hidden" />
-            HEADPHONES
-          </h2>
+          <h2 className="text-primary lg:text-[30px] md:text-[20px] text-[20px] font-[500]">{title}</h2>
           <p className="text-veryLightGray leading-6 md:w-[400px] w-[300px] my-4 lg:text-start text-center lg:text-[16px] text-[14px]">
             The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefiness your premium headphone experience by reproducing the balanced depth and precission of studio-quality sound.
           </p>
