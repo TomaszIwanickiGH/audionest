@@ -8,13 +8,13 @@ const HeadphonesWrapper = () => {
     <section>
       <MainProduct image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} />
       <MainDescription />
-      <SectionImages />
+      <SectionImages image1={images.Hman} image2={images.Hlaptop} image3={images.Hmain} />
 
       <div className={`${styles.padding} mx-auto flex flex-col mb-[-4rem]`}>
         <h2 className="text-primary text-center text-[36px] font-[500]">YOU MAY ALSO LIKE</h2>
         <div className="flex lg:flex-row flex-col items-center justify-between mt-16 gap-4">
           <div className="flex flex-col gap-6 items-center">
-            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center">
+            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center rounded-md">
               <img src={images.HEX1} alt="hex1" className="w-[230px] px-4 py-6 rounded-md" />
             </div>
             <h3 className="text-primary font-[500] text-[24px]">XX99 MARK I</h3>
@@ -30,7 +30,7 @@ const HeadphonesWrapper = () => {
           </div>
 
           <div className="flex flex-col gap-6 items-center">
-            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center">
+            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center rounded-md">
               <img src={images.HEX2} alt="hex2" className="w-[230px] px-4 py-6 rounded-md" />
             </div>
             <h3 className="text-primary font-[500] text-[24px]">XX59</h3>
@@ -46,7 +46,7 @@ const HeadphonesWrapper = () => {
           </div>
 
           <div className="flex flex-col gap-6 items-center">
-            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center">
+            <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center rounded-md">
               <img src={images.HEX3} alt="hex3" className="w-full px-4 py-6 rounded-md" />
             </div>
             <h3 className="text-primary font-[500] text-[24px]">X21 GEN 7</h3>
