@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { styles, images } from '../constants'
 import { Link } from 'react-router-dom'
 
-const MainProduct = ({ image, price, title }) => {
+const MainProduct = ({ image, price, title, width = 'w-full', padding = 'py-0' }) => {
   const [count, setCount] = useState(1)
   return (
     <section className={`${styles.padding} mx-auto flex flex-col`}>
@@ -11,8 +11,8 @@ const MainProduct = ({ image, price, title }) => {
       </Link>
 
       <div id="home" className={`flex lg:flex-row flex-col items-center justify-between relative z-0 lg:mt-10 mt-5`}>
-        <div className="lg:w-[50%] w-full bg-veryVeryLightGray">
-          <img src={image} alt="hero" className="w-full rounded-md" />
+        <div className={`lg:w-[50%] w-full bg-veryVeryLightGray flex justify-center items-center ${padding}`}>
+          <img src={image} alt="hero" className={`${width} rounded-md`} />
         </div>
         <div className="flex flex-col lg:items-start items-center lg:mt-0 mt-8">
           <h4 className="text-secondary tracking-[.2rem] mb-2 text-[14px]">NEW PRODUCT</h4>
