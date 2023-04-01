@@ -21,6 +21,12 @@ import Hlaptop from '../assets/headphones/H-laptop.jpg'
 import Hmain from '../assets/headphones/H-main.jpg'
 import Hman from '../assets/headphones/H-man.jpg'
 
+import SEX1 from '../assets/speakers/S-ex1.png'
+import SEX2 from '../assets/speakers/S-ex2.jpg'
+import SEX3 from '../assets/speakers/S-ex3.png'
+import SMain1 from '../assets/speakers/S-main1.jpg'
+import SMain2 from '../assets/speakers/S-main2.jpg'
+
 export default {
   earphonesLogo,
   headphonesLogo,
@@ -43,4 +49,9 @@ export default {
   Hlaptop,
   Hmain,
   Hman,
+  SEX1,
+  SEX2,
+  SEX3,
+  SMain1,
+  SMain2,
 }
