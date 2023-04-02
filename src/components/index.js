@@ -11,5 +11,7 @@ import EarphonesWrapper from './EarphonesWrapper'
 import MainProduct from './MainProduct'
 import MainDescription from './MainDescription'
 import SectionImages from './SectionImages'
+import CheckoutWrapper from './CheckoutWrapper'
+import Form from './Form'
 
-export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, MainProduct, MainDescription, SectionImages }
+export { Navbar, Hero, Devices, Products, About, Footer, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, MainProduct, MainDescription, SectionImages, CheckoutWrapper, Form }
