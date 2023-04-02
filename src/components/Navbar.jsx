@@ -23,7 +23,9 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="w-[50px] flex justify-end">
-        <img src={images.shoppingCart} alt="cart" className="h-[25px] w-[25px] hover:opacity-50 hover:cursor-pointer" />
+        <Link to="/checkout">
+          <img src={images.shoppingCart} alt="cart" className="h-[25px] w-[25px] hover:opacity-50 hover:cursor-pointer" />
+        </Link>
       </div>
       {toggleMenu && (
         <div className="absolute top-[70px] left-[30px] bg-lightGray z-5 rounded-md">
