@@ -27,6 +27,13 @@ import SEX3 from '../assets/speakers/S-ex3.png'
 import SMain1 from '../assets/speakers/S-main1.jpg'
 import SMain2 from '../assets/speakers/S-main2.jpg'
 
+import EEX1 from '../assets/earphones/E-ex1.png'
+import EEX2 from '../assets/earphones/E-ex2.png'
+import EEX3 from '../assets/earphones/E-ex3.png'
+import EMain1 from '../assets/earphones/E-main1.jpg'
+import EMain2 from '../assets/earphones/E-main2.jpg'
+import EMain3 from '../assets/earphones/E-main3.jpg'
+
 export default {
   earphonesLogo,
   headphonesLogo,
@@ -54,4 +61,10 @@ export default {
   SEX3,
   SMain1,
   SMain2,
+  EEX1,
+  EEX2,
+  EEX3,
+  EMain1,
+  EMain2,
+  EMain3,
 }
