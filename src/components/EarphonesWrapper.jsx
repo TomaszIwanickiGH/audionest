@@ -34,7 +34,7 @@ const EarphonesWrapper = () => {
             <div className="bg-veryVeryLightGray w-[300px] h-[300px] flex justify-center items-center rounded-md">
               <img src={images.EEX2} alt="hex3" className="w-full px-4 py-6 rounded-md" />
             </div>
-            <h3 className="text-primary font-[500] text-[24px]">AIRPODS 28E</h3>
+            <h3 className="text-primary font-[500] text-[24px]">AIRPODS 28D</h3>
             <button
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
