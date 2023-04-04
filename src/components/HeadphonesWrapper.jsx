@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { MainProduct, Devices, MainDescription, SectionImages } from '../components'
 import { images, styles } from '../constants'
 
-const HeadphonesWrapper = () => {
+const HeadphonesWrapper = ({ addProduct }) => {
   const [currentProduct, setCurrentProduct] = useState({ price: '$ 399.99', image: images.Hmain, title: 'XX99 MARK II' })
   return (
-    <section>
+    <section {...addProduct(currentProduct)}>
       <MainProduct image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} />
       <MainDescription />
       <SectionImages image1={images.Hman} image2={images.Hlaptop} image3={images.Hmain} />
