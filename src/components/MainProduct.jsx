@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { styles, images } from '../constants'
+import { styles } from '../constants'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
