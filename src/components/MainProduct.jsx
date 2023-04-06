@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import { styles, images } from '../constants'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
-const MainProduct = ({ image, price, title, width = 'w-full', padding = 'py-0' }) => {
+const MainProduct = ({ id, image, price, title, width = 'w-full', padding = 'py-0' }) => {
   const [count, setCount] = useState(1)
+  const dispatch = useDispatch()
+  const addNew = () => dispatch({ type: 'NEW', payload: { id: 2, image: image, title: title, price: price, amount: count } })
+
   return (
     <section className={`${styles.padding} mx-auto flex flex-col`}>
       <Link to="/">
         <p className="text-veryLightGray hover:text-secondary hover:cursor-pointer">Go Back</p>
       </Link>
 
-      <div id="home" className={`flex lg:flex-row flex-col items-center justify-between relative z-0 lg:mt-10 mt-5`}>
+      <div id={id} className={`flex lg:flex-row flex-col items-center justify-between relative z-0 lg:mt-10 mt-5`}>
         <div className={`lg:w-[50%] w-full bg-veryVeryLightGray flex justify-center items-center ${padding}`}>
           <img src={image} alt="hero" className={`${width} rounded-md`} />
         </div>
@@ -29,7 +33,15 @@ const MainProduct = ({ image, price, title, width = 'w-full', padding = 'py-0' }
               {count}
               <button onClick={() => setCount(count + 1)}>+</button>
             </div>
-            <button className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]">Add To Cart</button>
+            <button
+              className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
+              onClick={() => {
+                addNew()
+                setCount(1)
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
       </div>

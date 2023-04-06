@@ -3,7 +3,7 @@ import { MainProduct, Devices, MainDescription, SectionImages } from '../compone
 import { images, styles } from '../constants'
 
 const SpeakersWrapper = () => {
-  const [currentProduct, setCurrentProduct] = useState({ price: '$ 199.99', image: images.SEX1, title: 'ZH7 SPEAKER' })
+  const [currentProduct, setCurrentProduct] = useState({ id: 5, price: '$ 199.99', image: images.SEX1, title: 'ZH7 SPEAKER' })
   return (
     <section>
       <MainProduct image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} width="500px" padding="pt-8 pb-16" />
@@ -22,7 +22,7 @@ const SpeakersWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 229.99', image: images.SEX3, title: 'ZY 21' })
+                setCurrentProduct({ id: 6, price: '$ 229.99', image: images.SEX3, title: 'ZY 21' })
               }}
             >
               See Product
@@ -38,7 +38,7 @@ const SpeakersWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 199.99', image: images.SEX1, title: 'ZH7 SPEAKER' })
+                setCurrentProduct({ id: 7, price: '$ 199.99', image: images.SEX1, title: 'ZH7 SPEAKER' })
               }}
             >
               See Product
@@ -54,7 +54,7 @@ const SpeakersWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 299.99', image: images.speakersLogo, title: 'X 25 GEN 2' })
+                setCurrentProduct({ id: 8, price: '$ 299.99', image: images.speakersLogo, title: 'X 25 GEN 2' })
               }}
             >
               See Product
