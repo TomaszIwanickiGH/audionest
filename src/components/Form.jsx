@@ -46,7 +46,7 @@ const Form = () => {
           <label className="flex flex-col gap-2">
             <p className="font-[500] text-[15px]">Payment Method</p>
             <div className="flex border-2 border-solid outline-2 lg:w-[300px] w-full focus:border-secondary rounded-md px-6 py-3 text-[14px] gap-8">
-              <input type="radio" id="emoney" name="payment" checked className="accent-secondary" />
+              <input type="radio" id="emoney" name="payment" checked className="accent-secondary" onChange={() => {}} />
               <label htmlFor="emoney" className="font-[500] text-[15px]">
                 e-Money
               </label>
