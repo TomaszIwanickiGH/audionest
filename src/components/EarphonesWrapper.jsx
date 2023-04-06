@@ -39,7 +39,7 @@ const EarphonesWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ id: 11, price: '$ 109.99', image: images.EMain2, title: 'AIRPODS 28E' })
+                setCurrentProduct({ id: 11, price: '$ 109.99', image: images.EEX2, title: 'AIRPODS 28E' })
               }}
             >
               See Product
