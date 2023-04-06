@@ -3,7 +3,7 @@ import { MainProduct, Devices, MainDescription, SectionImages } from '../compone
 import { images, styles } from '../constants'
 
 const EarphonesWrapper = () => {
-  const [currentProduct, setCurrentProduct] = useState({ price: '$ 99.99', image: images.yx1Earphones, title: 'YX1 EARPHONES' })
+  const [currentProduct, setCurrentProduct] = useState({ id: 9, price: '$ 99.99', image: images.yx1Earphones, title: 'YX1 EARPHONES' })
 
   return (
     <section>
@@ -23,7 +23,7 @@ const EarphonesWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 89.99', image: images.EEX1, title: 'EDIFIER X11' })
+                setCurrentProduct({ id: 10, price: '$ 89.99', image: images.EEX1, title: 'EDIFIER X11' })
               }}
             >
               See Product
@@ -39,7 +39,7 @@ const EarphonesWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 109.99', image: images.EMain2, title: 'AIRPODS 28E' })
+                setCurrentProduct({ id: 11, price: '$ 109.99', image: images.EMain2, title: 'AIRPODS 28E' })
               }}
             >
               See Product
@@ -55,7 +55,7 @@ const EarphonesWrapper = () => {
               className="bg-secondary px-6 py-3 lg:w-[180px] w-[150px] text-white hover:text-primary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]"
               onClick={() => {
                 window.scrollTo(0, 0)
-                setCurrentProduct({ price: '$ 149.99', image: images.EEX3, title: 'AIRPODS 3C' })
+                setCurrentProduct({ id: 12, price: '$ 149.99', image: images.EEX3, title: 'AIRPODS 3C' })
               }}
             >
               See Product
