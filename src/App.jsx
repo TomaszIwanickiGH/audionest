@@ -1,9 +1,6 @@
 import { Navbar, HeroWrapper, HeadphonesWrapper, SpeakersWrapper, EarphonesWrapper, CheckoutWrapper, About, Footer } from './components'
 import { Route, Routes } from 'react-router-dom'
 
-import { useState } from 'react'
-import { images } from './constants'
-
 function App() {
   return (
     <div>
