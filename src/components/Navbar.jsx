@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { images, styles, data } from '../constants'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+  const allProducts = useSelector((state) => state.allProducts)
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
@@ -22,10 +24,11 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      <div className="w-[50px] flex justify-end">
+      <div className="w-[50px] flex justify-end relative">
         <Link to="/checkout">
           <img src={images.shoppingCart} alt="cart" className="h-[25px] w-[25px] hover:opacity-50 hover:cursor-pointer" />
         </Link>
+        {allProducts.length !== 0 && <p className="bg-secondary rounded-full absolute top-[-5px] right-[-8px] w-[15px] h-[15px] text-center text-[10px] font-bold">{allProducts.length}</p>}
       </div>
       {toggleMenu && (
         <div className="absolute top-[70px] left-[30px] bg-lightGray z-5 rounded-md">
