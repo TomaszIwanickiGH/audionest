@@ -14,11 +14,9 @@ const Hero = () => {
             HEADPHONES
           </h2>
           <p className="text-veryLightGray leading-6 md:w-[400px] w-[300px] my-4 lg:text-start text-center lg:text-[16px] text-[14px] md:mb-8">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-          <button className="bg-secondary hover:bg-white px-8 py-4 lg:w-[180px] w-[150px] text-white hover:text-secondary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]">
-            <Link to="/headphones" onClick={() => window.scrollTo(0, 0)}>
-              See Product
-            </Link>
-          </button>
+          <Link to="/headphones" onClick={() => window.scrollTo(0, 0)}>
+            <button className="bg-secondary hover:bg-white px-8 py-4 lg:w-[180px] w-[150px] text-white hover:text-secondary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]">See Product</button>
+          </Link>
         </div>
         <div className="w-[50%]">
           <img src={images.headphonesImage} alt="hero" />
