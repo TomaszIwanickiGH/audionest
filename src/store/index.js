@@ -1,5 +1,4 @@
 import { createStore } from 'redux'
-import { images } from '../constants'
 
 const reducerFn = (
   state = {
@@ -8,6 +7,7 @@ const reducerFn = (
   action
 ) => {
   if (action.type === 'NEW') return { allProducts: [...state.allProducts, action.payload] }
+  if (action.type === 'DEL') return { allProducts: state.allProducts.filter((item) => item.id !== action.payload) }
 
   return state
 }
