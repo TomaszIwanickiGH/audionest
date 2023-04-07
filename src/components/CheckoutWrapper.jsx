@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
-import { styles } from '../constants'
+import React from 'react'
+import { styles, images } from '../constants'
 import { Link } from 'react-router-dom'
 import { Form } from '../components'
 
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 
 const CheckoutWrapper = () => {
   const allProducts = useSelector((state) => state.allProducts)
+  const dispatch = useDispatch()
 
   let total = 0
   let arr = []
@@ -34,7 +35,10 @@ const CheckoutWrapper = () => {
                       <p className="font-[600] text-[15px] text-primary">{product.title}</p>
                       <p className="font-[500] text-[14px] text-veryLightGray mt-2">{product.price}</p>
                     </div>
-                    <p className="font-[500] text-[15px] text-veryLightGray">x{product.amount}</p>
+                    <div>
+                      <img src={images.iconCloseBlack} alt="remove" className="w-[12px] h-[12px] opacity-80 hover:cursor-pointer" onClick={() => dispatch({ type: 'DEL', payload: product.id })} />
+                      <p className="font-[500] text-[15px] text-veryLightGray mt-4">x{product.amount}</p>
+                    </div>
                   </div>
                 </div>
               )
