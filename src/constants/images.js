@@ -12,6 +12,7 @@ import iconInstagram from '../assets/icon-instagram.svg'
 import iconTwitter from '../assets/icon-twitter.svg'
 import iconArrow from '../assets/icon-arrow.svg'
 import iconClose from '../assets/icon-close.svg'
+import iconCloseBlack from '../assets/icon-close-black.svg'
 import speakersImage from '../assets/speakers-image.png'
 
 import HEX1 from '../assets/headphones/H-ex1.png'
@@ -49,6 +50,7 @@ export default {
   iconTwitter,
   iconArrow,
   iconClose,
+  iconCloseBlack,
   speakersImage,
   HEX1,
   HEX2,
