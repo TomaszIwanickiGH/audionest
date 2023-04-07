@@ -6,7 +6,7 @@ const SpeakersWrapper = () => {
   const [currentProduct, setCurrentProduct] = useState({ id: 5, price: '$ 199.99', image: images.SEX1, title: 'ZH7 SPEAKER' })
   return (
     <section>
-      <MainProduct image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} width="500px" padding="pt-8 pb-16" />
+      <MainProduct id={currentProduct.id} image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} width="500px" padding="pt-8 pb-16" />
       <MainDescription />
       <SectionImages image1={images.SMain2} image2={images.SMain1} image3={images.SEX2} />
 

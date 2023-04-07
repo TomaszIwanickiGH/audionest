@@ -7,7 +7,7 @@ const EarphonesWrapper = () => {
 
   return (
     <section>
-      <MainProduct image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} />
+      <MainProduct id={currentProduct.id} image={currentProduct.image} price={currentProduct.price} title={currentProduct.title} />
       <MainDescription />
       <SectionImages image1={images.EMain1} image2={images.EMain2} image3={images.EMain3} />
 
