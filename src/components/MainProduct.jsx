@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux'
 const MainProduct = ({ id, image, price, title, width = 'w-full', padding = 'py-0' }) => {
   const [count, setCount] = useState(1)
   const dispatch = useDispatch()
-  const addNew = () => dispatch({ type: 'NEW', payload: { id: 2, image: image, title: title, price: price, amount: count } })
+  const addNew = () => dispatch({ type: 'NEW', payload: { id: id, image: image, title: title, price: price, amount: count } })
 
   return (
     <section className={`${styles.padding} mx-auto flex flex-col`}>
