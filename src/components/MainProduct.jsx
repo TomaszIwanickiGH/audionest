@@ -3,13 +3,15 @@ import { styles } from '../constants'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
+import { motion } from 'framer-motion'
+
 const MainProduct = ({ id, image, price, title, width = 'w-full', padding = 'py-0' }) => {
   const [count, setCount] = useState(1)
   const dispatch = useDispatch()
   const addNew = () => dispatch({ type: 'NEW', payload: { id: id, image: image, title: title, price: price, amount: count } })
 
   return (
-    <section className={`${styles.padding} mx-auto flex flex-col`}>
+    <motion.section initial={{ opacity: 0, y: '-30%' }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className={`${styles.padding} mx-auto flex flex-col`}>
       <Link to="/">
         <p className="text-veryLightGray hover:text-secondary hover:cursor-pointer">Go Back</p>
       </Link>
@@ -45,7 +47,7 @@ const MainProduct = ({ id, image, price, title, width = 'w-full', padding = 'py-
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

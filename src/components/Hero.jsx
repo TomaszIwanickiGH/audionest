@@ -2,12 +2,14 @@ import React from 'react'
 import { images } from '../constants'
 import { Link } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
+
 const Hero = () => {
   return (
     <section className="w-full bg-primary">
       <div className={`sm:px-24 px-8 mx-auto h-[1.5px] bg-lightGray w-[88%]`}></div>
       <section id="home" className={`sm:px-24 px-8 mx-auto flex lg:flex-row flex-col-reverse justify-between items-center relative z-0 mt-4`}>
-        <div className="flex flex-col lg:items-start items-center lg:mt-0 mt-8">
+        <motion.div initial={{ opacity: 0, x: '-30%' }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="flex flex-col lg:items-start items-center lg:mt-0 mt-8">
           <h4 className="text-lightGray tracking-[.4rem] mb-2">NEW PRODUCT</h4>
           <h2 className="text-white lg:text-[60px] md:text-[40px] text-[20px]">
             XX99 MARK II <br className="lg:block hidden" />
@@ -17,10 +19,10 @@ const Hero = () => {
           <Link to="/headphones" onClick={() => window.scrollTo(0, 0)}>
             <button className="bg-secondary hover:bg-white px-8 py-4 lg:w-[180px] w-[150px] text-white hover:text-secondary hover:font-[500] lg-mb-0 mb-8 lg:text-[16px] text-[14px]">See Product</button>
           </Link>
-        </div>
-        <div className="w-[50%]">
+        </motion.div>
+        <motion.div initial={{ opacity: 0, x: '30%' }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="w-[50%]">
           <img src={images.headphonesImage} alt="hero" />
-        </div>
+        </motion.div>
       </section>
     </section>
   )

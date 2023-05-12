@@ -5,6 +5,8 @@ import { Form } from '../components'
 
 import { useSelector, useDispatch } from 'react-redux'
 
+import { motion } from 'framer-motion'
+
 const CheckoutWrapper = () => {
   const allProducts = useSelector((state) => state.allProducts)
   const dispatch = useDispatch()
@@ -20,7 +22,7 @@ const CheckoutWrapper = () => {
 
       <div className="flex xl:flex-row flex-col gap-8 xl:items-start items-center">
         <Form />
-        <div className="bg-white rounded-lg flex flex-col gap-4 sm:px-8 px-6 sm:py-8 py-6 mt-8 sm:min-w-[400px] min-w-[325px]">
+        <motion.div initial={{ opacity: 0, x: '30%' }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }} className="bg-white rounded-lg flex flex-col gap-4 sm:px-8 px-6 sm:py-8 py-6 mt-8 sm:min-w-[400px] min-w-[325px]">
           <h3 className="text-primary font-[500] text-[24px]">SUMMARY</h3>
           {allProducts.length > 0 ? (
             allProducts.map((product) => {
@@ -74,7 +76,7 @@ const CheckoutWrapper = () => {
               </button>
             </>
           )}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

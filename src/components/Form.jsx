@@ -1,8 +1,10 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
+
 const Form = () => {
   return (
-    <div className="flex flex-col bg-white sm:px-16 px-8 sm:py-12 py-6 rounded-lg mt-8 lg:max-w-[900px] max-w-[400px]">
+    <motion.div initial={{ opacity: 0, x: '-30%' }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }} className="flex flex-col bg-white sm:px-16 px-8 sm:py-12 py-6 rounded-lg mt-8 lg:max-w-[900px] max-w-[400px]">
       <h3 className="text-primary text-[32px] font-[500]">CHECKOUT</h3>
       <form className="flex flex-col mt-6">
         <p className="text-secondary text-[14px] font-[500]">BILLING DETAILS</p>
@@ -71,7 +73,7 @@ const Form = () => {
           </label>
         </div>
       </form>
-    </div>
+    </motion.div>
   )
 }
 
