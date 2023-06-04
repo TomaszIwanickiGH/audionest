@@ -32,8 +32,8 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
         variants={{
-          visible: { opacity: 1, x: 0 },
-          hidden: { opacity: 0, x: '40%' },
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: '40%' },
         }}
         src={images.manPhoto}
         alt="man"
