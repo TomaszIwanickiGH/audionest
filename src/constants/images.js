@@ -10,7 +10,7 @@ import iconFacebook from '../assets/icon-facebook.svg';
 import iconHamburger from '../assets/icon-hamburger.svg';
 import iconInstagram from '../assets/icon-instagram.svg';
 import iconTwitter from '../assets/icon-twitter.svg';
-import iconArrow from '../assets/icon-arrow.svg';
+// import iconArrow from '../assets/icon-arrow.svg';
 import iconClose from '../assets/icon-close.svg';
 import iconCloseBlack from '../assets/icon-close-black.svg';
 import speakersImage from '../assets/speakers-image.png';
