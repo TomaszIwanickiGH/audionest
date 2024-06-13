@@ -1,7 +1,7 @@
-import React from 'react'
-import { styles, images } from '../constants'
+import React from 'react';
+import { styles, images } from '../constants';
 
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -22,8 +22,8 @@ const About = () => {
           <span className="text-secondary">BEST</span> AUDIO GEAR
         </h2>
         <p className="mt-4 text-veryLightGray xl:w-[60%] w-full">
-          Located at the heart of New York City. Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms avaiable for you to browse and experience a wide range of our products. Stop by our store to
-          meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
+          Located at the heart of New York City. Audionest is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms avaiable for you to browse and experience a wide range of our products. Stop by our store to
+          meet some of the fantastic people who make Audionest the best place to buy your portable audio equipment.
         </p>
       </motion.div>
       <motion.img
@@ -40,7 +40,7 @@ const About = () => {
         className="rounded-md"
       />
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
