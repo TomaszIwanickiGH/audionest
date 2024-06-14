@@ -22,10 +22,10 @@ const CheckoutWrapper = () => {
 
       <div className="flex xl:flex-row flex-col gap-8 xl:items-start items-center">
         <Form />
-        <motion.div
-          initial={{ opacity: 0, x: '30%' }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+        <div
+          // initial={{ opacity: 0, x: '30%' }}
+          // animate={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 1.5 }}
           className="bg-white rounded-lg flex flex-col gap-4 sm:px-8 px-6 sm:py-8 py-6 mt-8 sm:min-w-[400px] min-w-[300px]"
         >
           <h3 className="text-primary font-[500] text-[24px]">SUMMARY</h3>
@@ -99,7 +99,7 @@ const CheckoutWrapper = () => {
               </button>
             </>
           )}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
