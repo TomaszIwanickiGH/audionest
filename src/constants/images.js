@@ -1,6 +1,6 @@
 import earphonesLogo from '../assets/earphones-logo.png';
 import headphonesLogo from '../assets/headphones-logo.png';
-// import speakersLogo from '../assets/speakers-logo.png'
+import speakersLogo from '../assets/speakers-logo.png';
 import headphonesImage from '../assets/headphones-image.jpg';
 import manPhoto from '../assets/man-photo.jpg';
 import yx1Earphones from '../assets/yx1-earphones.jpg';
@@ -10,7 +10,7 @@ import iconFacebook from '../assets/icon-facebook.svg';
 import iconHamburger from '../assets/icon-hamburger.svg';
 import iconInstagram from '../assets/icon-instagram.svg';
 import iconTwitter from '../assets/icon-twitter.svg';
-// import iconArrow from '../assets/icon-arrow.svg';
+import iconArrow from '../assets/icon-arrow.svg';
 import iconClose from '../assets/icon-close.svg';
 import iconCloseBlack from '../assets/icon-close-black.svg';
 import speakersImage from '../assets/speakers-image.png';
